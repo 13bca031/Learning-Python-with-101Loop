@@ -23,5 +23,7 @@ choice = input("Enter choice(1/2/3/4/5):")
 if choice == '1':
     a = int(input("enter number: "))
     x = []
-    x.insert(a)
+    n = 10
+    for
+    print(add(a))
     print(add(a))

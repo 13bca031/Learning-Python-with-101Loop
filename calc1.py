@@ -1,5 +1,6 @@
-def add(x, y):
-   return x + y
+def add(x):
+   x += x
+   return x
 
 # This function subtracts two numbers
 def subtract(x, y):
@@ -12,7 +13,7 @@ def multiply(x, y):
 # This function divides two numbers
 def divide(x, y):
    return x / y
-   
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
@@ -36,9 +37,12 @@ while True:
 
 
     if choice == '1':
-            num1 = int(input("Enter first number: "))
-            num2 = int(input("Enter second number: "))
-            print(num1,"+",num2,"=", add(num1,num2))
+            lst = []
+            num = int(input('How many numbers: '))
+            for n in range(num):
+                numbers = int(input('Enter number '))
+                lst.append(numbers)
+            print("Sum of elements in given list is :", add(numbers))
 
     elif choice == '2':
             num1 = int(input("Enter first number: "))
